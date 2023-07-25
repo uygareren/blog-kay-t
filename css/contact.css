@@ -47,7 +47,6 @@ a:hover {
   font-size: 40px;
 }
 
-
 p {
   font-size: 18px;
   font-weight: 300;
@@ -107,7 +106,6 @@ b, strong {
 .project-info img {
   max-width: 1000px; /* Set your desired width in pixels */
   max-height: 400px; /* Set your desired height in pixels */
-  padding-left: 150px ;
 }
 
 .card-deck {
@@ -393,8 +391,6 @@ b, strong {
   color: #ffffff;
 }
 
-
-
 .timeline-wrapper {
   position: relative;
   padding: 22px 0;
@@ -543,50 +539,18 @@ b, strong {
   color: #ffc200;
 }
 
-/* BLOG DETAİLS */
-
-
-/* Style the blog detail container */
-.blog-detail-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.blog-image img {
-  width: 800px; /* Set the width of the image to 800px */
-  height: 500px; /* Set the height of the image to 500px */
-  object-fit: fill; /* Ensure the image covers the entire container */
-  margin-top: 50px;
-}
-
-.blog-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%; /* This is important to vertically center the text */
-  margin-top: 25px;
-}
-
-  
-.blog-description h2 {
-  font-size: 24px;  
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.blog-description p {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.row{
-  margin-top: 50px;
-
-}
-
 
 /* BLOG */ 
+.container .row{
+    margin-top: 100px;
+}
+
+.card-deck{
+    margin-bottom: 50px;
+}
+
+
+
 
 
 

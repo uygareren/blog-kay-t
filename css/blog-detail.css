@@ -47,7 +47,6 @@ a:hover {
   font-size: 40px;
 }
 
-
 p {
   font-size: 18px;
   font-weight: 300;
@@ -107,7 +106,6 @@ b, strong {
 .project-info img {
   max-width: 1000px; /* Set your desired width in pixels */
   max-height: 400px; /* Set your desired height in pixels */
-  padding-left: 150px ;
 }
 
 .card-deck {
@@ -393,8 +391,6 @@ b, strong {
   color: #ffffff;
 }
 
-
-
 .timeline-wrapper {
   position: relative;
   padding: 22px 0;
@@ -565,7 +561,7 @@ b, strong {
   justify-content: center;
   align-items: center;
   height: 100%; /* This is important to vertically center the text */
-  margin-top: 25px;
+  margin-top: 40px;
 }
 
   
@@ -580,13 +576,12 @@ b, strong {
   line-height: 1.6;
 }
 
-.row{
-  margin-top: 50px;
 
+.footer{
+    margin-top: 30px;
 }
 
 
-/* BLOG */ 
 
 
 
