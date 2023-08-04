@@ -39,7 +39,7 @@ include("partials/header.php");
         <div class="contact-form">
           <h2 class="mb-4">Interested to work together? Let's talk</h2>
 
-          <form action="" method="get">
+          <form action="admin/code.php" method="POST">
             <div class="row">
               <div class="col-lg-6 col-12">
                 <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
@@ -54,7 +54,7 @@ include("partials/header.php");
               </div>
 
               <div class="ml-lg-auto col-lg-5 col-12">
-                <input type="submit" class="form-control submit-btn" value="Send Button">
+                <input type="submit" class="form-control submit-btn" name="add_contact_btn" value="Send Button">
               </div>
             </div>
           </form>
