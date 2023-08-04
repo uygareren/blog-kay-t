@@ -16,26 +16,33 @@ include("partials/header.php");
 
     <!-- Blog Detail Content -->
     <section class="blog-content">
+      <?php
+      include_once("functions/userFunctions.php");
+      if(isset($_GET['id'])){
+        $id = $_GET['id'];
+        $blog = getById('addblog', 'id', $id);
+
+        $formatted_date = date("F d, Y", strtotime($blog['date']));
+
+
+      ?>
       <div class="container">
         <!-- Blog Image -->
         <div class="blog-image">
-          <img src="images/slider/1.jpg" alt="Blog Image">
+        <img src="uploads/<?php echo $blog['image']; ?>" alt="Blog Image" style="object-fit: scale-down;">
         </div>
         <!-- Blog Description -->
         <div class="blog-description">
-          <h2 class="blog-title">Blog Title</h2>
-          <p class="blog-meta">Posted on July 25, 2023</p>
+          <h2 class="blog-title"><?php echo $blog['title']; ?></h2>
+          <p class="blog-meta">Posted on <?php echo $formatted_date; ?></p>
           <p class="blog-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-            Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-            Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-            Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-            Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-            Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-            Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+          <?php echo $blog['description']; ?>
           </p>
         </div>
       </div>
+      <?php
+      }
+      ?>
     </section>
   </div>
 
